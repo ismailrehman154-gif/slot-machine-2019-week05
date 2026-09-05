@@ -1,0 +1,109 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #333, #111);
+    color: #fff;
+    overflow: hidden;
+  }
+
+  .slot-machine-container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+  }
+
+  .slot-machine{
+    display:flex;
+    gap:20px;
+    padding:20px;
+    background: #efefef;
+    border:5px solid #555;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+    transition:background-color 0.5s ease;
+  }
+
+  .reel{
+    width:200px;
+    height:125px;
+    overflow:hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    font-size: 75px;
+  }
+  
+
+  button{
+    margin-top: 20px;
+    padding:12px 25px;
+    font-size:1.2em;
+    cursor:pointer;
+    background-color:#ff4747;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0 5px 10px rgba(255,71,71,0.4);
+  }
+
+  button:hover{
+    background-color:#ff2a2a;
+  }
+
+  #message{
+    position: fixed;
+    top: 100px;
+    font-size: 1.5em;
+    color:#ffdf00;
+    font-weight: bold;
+  }
+  
+  
+
+ 
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@keyframes fall {
+  0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100%{
+    transform:  translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
