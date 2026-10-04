@@ -1,24 +1,9 @@
-# 🎰 Week05 Bootcamp2019 Project: Slot Machine
+# Slot Machine
 
-### Goal: Build a Simple Slot Machine
+A slot machine that takes your (fake) money seriously. Start with $1000, set your bet, spin three reels, and watch your balance move.
 
-Build a simple slot machine with minimum 5 items per reel and 3 reels - user should be able to bet min or max and have their total update
+![Slot Machine screenshot](screenshot.jpg)
 
-### How to submit your code for review:
+The reels are the easy part. The real work is the money: tracking your balance, making sure you can't bet what you don't have, and updating every display after each spin without the numbers drifting apart.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
-
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+HTML, CSS, and JavaScript. My code is on the `answer` branch.
